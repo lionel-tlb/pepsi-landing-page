@@ -18,6 +18,7 @@ CSS
 JavaScript (for theme switching interaction)
 
 ## How to Run
+
 1. Clone this repository to your local machine:
 
 git clone https://github.com/lionel-tlb/pepsi-landing-page.git
