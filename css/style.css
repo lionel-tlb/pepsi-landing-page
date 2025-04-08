@@ -1,276 +1,267 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
-    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-section
-{
+section {
     position: relative;
     width: 100%;
     min-height: 100vh;
     padding: 100px;
-    display: flex ;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #0062be;
-    transition: 0,5s;
+    transition: 0, 5s;
 }
 
-header
-{
+header {
     position: absolute;
-    top:0;  
-    left:0;
-    width:100%;
-    padding:20px 100px;
-    display:flex;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header .logo
-{
+
+header .logo {
     position: relative;
-    max-width:80px;
+    max-width: 80px;
 }
-header ul
-{
+
+header ul {
     position: relative;
     display: flex;
 }
-header ul li 
-{
-    list-style:none;  
+
+header ul li {
+    list-style: none;
 }
-header ul li a 
-{
+
+header ul li a {
     display: inline-block;
     text-decoration: none;
     color: #fff;
     font-weight: 400;
-    margin-left:40px;
+    margin-left: 40px;
 }
-.content
-{
+
+.content {
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.content .textBox
-{
+
+.content .textBox {
     position: relative;
     max-width: 600px;
 }
-.content .textbox h2
-{
-    color:#fff;
+
+.content .textbox h2 {
+    color: #fff;
     font-size: 4em;
     line-height: 1.5em;
-    font-weight:900 ;
+    font-weight: 900;
     text-transform: uppercase;
 }
-.content .textbox h2 span
-{
+
+.content .textbox h2 span {
     font-size: 2em;
 }
-.content .textbox p
-{
-    color:#fff;
+
+.content .textbox p {
+    color: #fff;
 }
-.content .textbox a
-{
+
+.content .textbox a {
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
     background-color: #fff;
-    color:#111;
+    color: #111;
     border-radius: 40px;
     letter-spacing: 1px;
-    text-decoration:none;
+    text-decoration: none;
     text-transform: uppercase;
 
 }
-.content .imgBox
-{
+
+.content .imgBox {
     width: 600px;
-    display:flex;
+    display: flex;
     justify-content: flex-end;
     margin-top: 50px;
     padding-right: 50px;
 }
-.content .imgBox img
-{
-    max-width:260px;
+
+.content .imgBox img {
+    max-width: 260px;
 }
-.thumb
-{
+
+.thumb {
     position: absolute;
     left: 50%;
-    bottom:20px;
-    transform: translate(-50%);  
-    display:flex;
+    bottom: 20px;
+    transform: translate(-50%);
+    display: flex;
 }
-.thumb li
-{
+
+.thumb li {
     list-style: none;
-    display:inline-block;
+    display: inline-block;
     margin: 0 20px;
     cursor: pointer;
-    transition:0.5s;
+    transition: 0.5s;
 }
-.thumb li:hover
-{
+
+.thumb li:hover {
     transform: translateY(-15px);
 }
-.thumb li img
-{
-    max-width:40px;
+
+.thumb li img {
+    max-width: 40px;
 }
-.sci
-{
+
+.sci {
     position: absolute;
-    top:50%;
-    right:30px;
-    transform:translateY(-50%);
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.sci li 
-{
+
+.sci li {
     list-style: none;
 
 }
-.sci li a
-{
+
+.sci li a {
     display: inline-block;
     filter: invert(1);
     margin: 5px 0;
-    transform:scale(0.6);
+    transform: scale(0.6);
 }
-@media(max-width:991px)
-{
-    section
-    {
+
+@media(max-width:991px) {
+    section {
         padding: 40px;
         padding-bottom: 140px;
     }
-    header
-    {
+
+    header {
         padding: 20px 40px;
     }
-    header .logo
-    {
-        position:relative;
-        max-width:60px;
+
+    header .logo {
+        position: relative;
+        max-width: 60px;
     }
-    header ul 
-    {
-        position:fixed;
-        top:0;
-        left:0;
+
+    header ul {
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
-        height:100%;
+        height: 100%;
         background: #fff;
-        z-index: 1; 
+        z-index: 1;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transition:0.2s;
-        visibility:hidden;
-        opacity:0;
+        transition: 0.2s;
+        visibility: hidden;
+        opacity: 0;
     }
-    header ul.active 
-    {
-        visibility: visible;  
+
+    header ul.active {
+        visibility: visible;
         opacity: 1;
     }
-    header ul li a 
-    {
+
+    header ul li a {
         display: inline-block;
-        color:#111;
-        font-weight:400;
-        margin-left:0;
-        text-decoration:none;
+        color: #111;
+        font-weight: 400;
+        margin-left: 0;
+        text-decoration: none;
         font-size: 2em;
         margin: 10px 0;
     }
-    header ul li a:hover 
-    {
-        color:#ed0223;
+
+    header ul li a:hover {
+        color: #ed0223;
     }
-    .toggle_menu
-    {
-        position:relative;
+
+    .toggle_menu {
+        position: relative;
         width: 40px;
-        height:40px;
-        background-position: center;
-        background-size: 30px;
-        background-repeat: no-repeat;
+        height: 40px;
         z-index: 2;
         cursor: pointer;
     }
-    .toggle_menu.active
-    {
-        background: url(images/close.png);
-        background-position: center;
-        background-size: 25px;
-        background-repeat: no-repeat ;
-        filter:invert(1);
+
+    .toggle_menu.active {
+        filter: invert(1);
     }
-    .content
-    {
-        margin-top:80px;
+
+    .content {
+        margin-top: 80px;
         flex-direction: column;
     }
-    .content .textBox
-    {
-        position:relative;
+
+    .content .textBox {
+        position: relative;
         max-width: 100%;
         padding-right: 20px;
     }
-    .content .textBox h2 
-    {
-        font-size:3em;
+
+    .content .textBox h2 {
+        font-size: 3em;
     }
-    .content .textBox a 
-    {
-        font-size:14px;
-        padding:8px 15px;
+
+    .content .textBox a {
+        font-size: 14px;
+        padding: 8px 15px;
     }
-    .content .imgBox 
-    {
-        width:100%;
-        display:flex;
-        padding-right:0;
+
+    .content .imgBox {
+        width: 100%;
+        display: flex;
+        padding-right: 0;
         margin-top: 50px;
         justify-content: center;
     }
-    .content .imgBox img 
-    {
+
+    .content .imgBox img {
         max-width: 150px;
     }
-    .thumb li img 
-    {
+
+    .thumb li img {
         max-width: 30px;
     }
-    .sci
-    {
-        position:absolute;
-        top:50%;
-        right:0;
-        width:50px;
+
+    .sci {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 50px;
         border-radius: 8px 0 0 8px;
-        background: rgba(0,0,0,0.2);
-        transform: translateY(-50%); 
+        background: rgba(0, 0, 0, 0.2);
+        transform: translateY(-50%);
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-} 
+}
