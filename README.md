@@ -20,11 +20,12 @@ JavaScript (for theme switching interaction)
 ## How to Run
 
 1. Clone this repository to your local machine:
+   
 git clone https://github.com/lionel-tlb/pepsi-landing-page.git
 
-2.Navigate into the project directory: cd pepsi-landing-page
+3. Navigate into the project directory: cd pepsi-landing-page
 
-3. Open the index.html file in your browser to see the landing page in action.
+4. Open the index.html file in your browser to see the landing page in action.
 
 ## License
 This project is licensed under the MIT License.
